@@ -9,6 +9,7 @@
     transition-duration: 250ms;
 }
 .modal{
+    max-width: 100%;
     width: 408px;
     height: 576px;
     background-color: #FCFCFC;

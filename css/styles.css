@@ -268,7 +268,7 @@ a {
 
 .title {
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
     color: var(--text-color-dark);
     letter-spacing: 0.02em;
@@ -284,7 +284,7 @@ a {
 }
 
 .section-title {
-    line-height: 1.5;
+    line-height: 1.2;
     font-weight: 700;
     font-size: 36px;
     color: var(--text-color-dark);
@@ -487,6 +487,12 @@ background-color: #FFFFFF;
     gap: 16px;
     border:none;
     width: 165px;
+    cursor: pointer;
+    transition-duration: 250ms;
+}
+.button-subscribe:hover{
+    background-color: var(--active-link-color);
+    
 }
 .mobile-nav {
     position: fixed;
@@ -518,7 +524,7 @@ background-color: #FFFFFF;
 }
 .mobile-contacts >li:first-child{
     color: #4D5AE5;
-    font-size: 36px;
+    font-size: 22px;
     font-weight: 700;
     margin-bottom: 40px;
 }
@@ -659,7 +665,7 @@ background-color: #FFFFFF;
     
 }
 
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 769px) { 
     .container {
         max-width: 768px;
     }
@@ -674,12 +680,18 @@ background-color: #FFFFFF;
         gap: 12px;
         flex-direction: column;
     }
+    .contact-link{
+        font-size: 12px;
+    }
     .banner-slogan{
         font-size: 56px;
         width: 500px;
     }
     .banner-slogan{
         margin-bottom: 36px;
+    }
+    .social{
+        text-align: left;
     }
     .feature-container{
         flex-direction: row;
@@ -750,6 +762,7 @@ background-color: #FFFFFF;
     .footer-elements{
         width: auto;
         gap: 80px;
+        align-items: baseline;
        
     }
     .footer-logo{
@@ -758,6 +771,9 @@ background-color: #FFFFFF;
     .banner-section{
         height: 600px;
         padding: 188px 0;
+    }
+    .bg-grey{
+        padding: 120px 0;
     }
 }
 @media (min-device-pixel-ratio: 2),
