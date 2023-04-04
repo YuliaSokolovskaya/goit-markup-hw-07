@@ -651,7 +651,7 @@ background-color: #FFFFFF;
         display: none;
     }
 }
-@media screen and (max-width :1200px) {
+@media screen and (max-width :1201px) {
     .foto-section, .feature-image{
         display: none;
     }
