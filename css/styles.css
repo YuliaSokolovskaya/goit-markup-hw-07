@@ -70,13 +70,13 @@ ul{
 }
 
 .contacts {
-    display: flex;
+    display: none;
     margin-left: auto;
     gap: 40px;
 }
 .links {
-    display: flex;
-    gap: 40px
+    gap: 40px;
+    display: none;
 }
 
 a {
@@ -325,6 +325,7 @@ background-color: #FFFFFF;
 
 .foto-section{
     padding-bottom: 120px;
+    display: none;
 }
 .bg-grey{
     background-color: var(--bg-grey-color);
@@ -461,7 +462,7 @@ background-color: #FFFFFF;
 .feature-image{
     height: 112px;
     background-color: #F4F4FD;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     margin-bottom: 8px;
@@ -646,17 +647,6 @@ background-color: #FFFFFF;
     height: 22px;
 }
 
-@media screen and (max-width :769px) {
-    .links, .contacts { 
-        display: none;
-    }
-}
-@media screen and (max-width :1201px) {
-    .foto-section, .feature-image{
-        display: none;
-    }
-}
-
 
 @media screen and (min-width :480px) {
     .container {
@@ -679,6 +669,7 @@ background-color: #FFFFFF;
     .contacts{
         gap: 12px;
         flex-direction: column;
+        display: flex;
     }
     .contact-link{
         font-size: 12px;
@@ -732,6 +723,9 @@ background-color: #FFFFFF;
    .input-footer{
     width: 264px;
    }
+   .links{
+    display: flex;
+   }
 } 
 
 @media screen and (min-width: 1200px) {
@@ -751,7 +745,11 @@ background-color: #FFFFFF;
     .title{
         font-size: 20px;
         text-align: left;
+        font-weight: 500;
         
+    }
+    .contact-link {
+        font-size: 16px;
     }
     .description{
         font-weight: 400;
@@ -775,6 +773,13 @@ background-color: #FFFFFF;
     .bg-grey{
         padding: 120px 0;
     }
+    .feature-image{
+        display: flex;
+    }
+    .foto-section{
+        display: block;
+    }
+
 }
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
